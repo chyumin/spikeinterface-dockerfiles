@@ -69,9 +69,10 @@ jobs:
 
       - name: Build ${{ matrix.sorter }} Docker image
         run: |
+          pwd
           cd ${{ matrix.sorter }}
           bash build.sh
-          cd ..
+          pwd
 
       - uses: eWaterCycle/setup-singularity@v7
         with:
@@ -79,6 +80,7 @@ jobs:
 
       - name: Install dependencies & Test ${{ matrix.sorter }} image
         run: |
+          pwd
           if  [[ ${{ matrix.sorter }} == 'tridesclous' ]]; then
             pip install tridesclous
           fi
