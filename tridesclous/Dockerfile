@@ -1,3 +1,4 @@
+#TEST
 FROM python:3.8
 
 # downgrade pip version to avoid dependency issues during installations
