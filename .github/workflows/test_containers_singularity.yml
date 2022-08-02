@@ -27,6 +27,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements_test.txt
+          pip install numba
 
       - name: Run test singularity containers
         run: |
