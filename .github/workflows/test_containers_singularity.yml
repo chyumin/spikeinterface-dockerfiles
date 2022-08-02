@@ -26,7 +26,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install tridesclous
           pip install -r requirements_test.txt
 
       - name: Run test singularity containers
