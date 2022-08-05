@@ -19,7 +19,4 @@ RUN pip install scipy pandas scikit-learn matplotlib seaborn tqdm openpyxl quant
 RUN pip install h5py
 RUN pip install loky packaging
 
-COPY tridesclous /opt/tridesclous
-
-RUN pip install -e /opt/tridesclous
-
+RUN pip install tridesclous==1.6.5
