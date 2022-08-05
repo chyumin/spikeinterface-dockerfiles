@@ -31,4 +31,5 @@ jobs:
 
       - name: Run test singularity containers
         run: |
-          pytest -sv tests/test_singularity_containers.py::test_tridesclous
+          pip install tridesclous
+          pytest -sv tests/test_singularity_containers.py
