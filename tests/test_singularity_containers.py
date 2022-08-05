@@ -48,6 +48,7 @@ def test_mountainsort4(run_kwargs):
 
 
 def test_tridesclous(run_kwargs):
+    run_kwargs['singularity_image'] = 'chyumin/tridesclous-base:test'
     sorting = ss.run_tridesclous(output_folder="tridesclous", **run_kwargs)
     print(sorting)
 
