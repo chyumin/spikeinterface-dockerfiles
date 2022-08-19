@@ -45,4 +45,4 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
-          pytest -sv tests/test_containers_gpu.py
+          pytest -sv tests/test_containers_gpu.py::test_pykilosort
