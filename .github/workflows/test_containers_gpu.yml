@@ -45,4 +45,6 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
+          git clone -b fix-pyks-params https://github.com/chyumin/spikeinterface.git /opt/spikeinterface
+          export SPIKEINTERFACE_DEV_PATH=/opt/spikeinterface
           pytest -sv tests/test_containers_gpu.py::test_pykilosort
