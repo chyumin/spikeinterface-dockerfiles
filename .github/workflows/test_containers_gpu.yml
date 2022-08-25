@@ -47,4 +47,4 @@ jobs:
         run: |
           git clone -b test-pyks https://github.com/chyumin/spikeinterface.git /opt/spikeinterface
           export SPIKEINTERFACE_DEV_PATH=/opt/spikeinterface
-          pytest -sv tests/test_containers_gpu.py::test_pykilosort
+          pytest -sv tests/test_containers_gpu.py
