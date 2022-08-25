@@ -37,8 +37,12 @@ def run_kwargs(work_dir):
     return dict(recording=test_recording, verbose=True, singularity_image=True)
 
 
-def test_kilosort2(run_kwargs):
-    sorting = ss.run_kilosort2(output_folder="kilosort2", **run_kwargs)
+# def test_kilosort2(run_kwargs):
+#     sorting = ss.run_kilosort2(output_folder="kilosort2", **run_kwargs)
+#     print(sorting)
+
+def test_spykingcircus(run_kwargs):
+    sorting = ss.run_spykingcircus(output_folder="spykingcircus", **run_kwargs)
     print(sorting)
 
 
